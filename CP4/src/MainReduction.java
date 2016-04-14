@@ -23,11 +23,11 @@ public class MainReduction {
         List<Integer> ints1 = Arrays.asList(0, 1, 2, 3, 4);
         List<Integer> ints2 = Arrays.asList(-1, -2, -3, -4);
         
-        BinaryOperator<Integer> op = (i1, i2) -> Integer.max(i1, i2) ;
+        BinaryOperator<Integer> op = (i1, i2) -> Integer.max(i1, i2) ;   //how to make a binaryoperator
         
         int reduction1 = reduce(ints1, 0, op);
         int reduction2 = reduce(ints2, 0, op);
-        int reduction = reduce(Arrays.asList(reduction1, reduction2), 0, op);
+        int reduction = reduce(Arrays.asList(reduction1, reduction2), 0, op);  //simulate 2 core
         // int reduction = reduce(ints, 0, op);
         
         System.out.println("Reduction : " + reduction2);

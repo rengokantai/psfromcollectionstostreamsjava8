@@ -17,7 +17,6 @@ public class MainBuildingStreams {
         builder.add("a").add("b");
         Stream<String> st = builder.build();
         st.forEach(System.out::println);
-        
         List<Integer> ints = Arrays.asList(0, 1, 2, 3, 4);
         
         Stream<Integer> stream1 = ints.stream();
